@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import MacTheMachine from '../images/mac-the-machine.jpg';
-import CarrotBuds from '../images/carrotbuds.jpg';
-import VegThree from '../images/veg-3.jpg';
+import Mac1 from '../images/MAC-1.jpeg';
+import Mac2 from '../images/MAC-2.jpeg';
+import Mac3 from '../images/MAC-3.jpeg';
+import Mac4 from '../images/MAC-4.jpeg';
 import { ReactComponent as ArrowOpen } from '../images/arrow-open.svg';
 
 const images = [
-  { src: MacTheMachine, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
-  { src: CarrotBuds, content: 'Carrot Buds', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' },
-  { src: MacTheMachine, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
-  { src: VegThree, content: 'Carrot Buds', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' }
+  { src: Mac1, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
+  { src: Mac2, content: 'Mac the Machine', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' },
+  { src: Mac3, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
+  { src: Mac4, content: 'Mac the Machine', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' }
 ];
 
 const CarouselButton = ({ url, text }) => (
@@ -44,7 +45,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full max-w-6xl h-96 mx-auto overflow-hidden">
+    <div className="relative w-full max-w-6xl h-1/2 mx-auto overflow-hidden">
       {/* Carousel Wrapper */}
       <div
         className="flex transition-transform duration-500 ease-in-out"

@@ -1,5 +1,5 @@
 import React from 'react';
-import RobotRescueImage from '../images/mac-the-machine.jpg'; // Import the image
+import Mac1 from '../images/MAC-1.jpeg'; // Import the image
 
 const RobotRescue = () => {
   return (
@@ -7,7 +7,7 @@ const RobotRescue = () => {
       <div className="flex flex-col md:flex-row gap-6">
         <div className="md:w-1/2 flex-shrink-0 mb-6 md:mb-0">
           <img
-            src={RobotRescueImage}
+            src={Mac1}
             alt="Robot Rescue Game"
             className="w-full h-auto rounded-lg shadow-lg"
           />

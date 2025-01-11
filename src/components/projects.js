@@ -1,20 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import MacTheMachine from '../images/mac-the-machine.jpg';
+import Mac1 from '../images/MAC-1.jpeg';
 import CarrotBuds from '../images/carrotbuds.jpg';
-import VegOne from '../images/veg-1.jpeg';
-import VegTwo from '../images/veg-2.jpg';
-import VegThree from '../images/veg-3.jpg';
 
 const Games = () => {
   const games = [
-    { title: 'Mac the Machine', image: MacTheMachine, description: 'A thrilling adventure...', color: 'orange', status: 'published', router: 'mac-the-machine' },
+    { title: 'Mac the Machine', image: Mac1, description: 'A thrilling adventure...', color: 'orange', status: 'published', router: 'mac-the-machine' },
     { title: 'Carrot Buds', image: CarrotBuds, description: 'An exciting journey...', color: 'blue', status: 'development', router: '' },
-    { title: 'Mac the Machine', image: MacTheMachine, description: 'A thrilling adventure...', color: 'orange', status: 'published', router: 'mac-the-machine' },
-    { title: 'Carrot Buds', image: VegOne, description: 'An exciting journey...', color: 'blue', status: 'development', router: '' },
-    { title: 'Mac the Machine', image: VegTwo, description: 'A thrilling adventure...', color: 'orange', status: 'published', router: 'mac-the-machine' },
-    { title: 'Carrot Buds', image: VegThree, description: 'An exciting journey...', color: 'blue', status: 'development', router: '' }
   ];
 
   return (

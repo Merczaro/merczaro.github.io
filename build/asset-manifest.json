@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/YorakeysWebsite/static/css/main.ea9e5f92.css",
-    "main.js": "/YorakeysWebsite/static/js/main.dd7cdc25.js",
+    "main.js": "/YorakeysWebsite/static/js/main.bfc7448d.js",
     "static/media/MAC-3.jpeg": "/YorakeysWebsite/static/media/MAC-3.86987aaf3bf9acf8dd77.jpeg",
     "static/media/image.jpg": "/YorakeysWebsite/static/media/image.5812a557c401204c9ecd.jpg",
     "static/media/MAC-4.jpeg": "/YorakeysWebsite/static/media/MAC-4.f30134d1ae9657cc9214.jpeg",
@@ -18,10 +18,10 @@
     "static/media/arrow-open.svg": "/YorakeysWebsite/static/media/arrow-open.6f71e65b999406eefcb0445f65230256.svg",
     "static/media/nav-icon.svg": "/YorakeysWebsite/static/media/nav-icon.237eb9f890ef2fac3ce9fb69b11ad6e4.svg",
     "main.ea9e5f92.css.map": "/YorakeysWebsite/static/css/main.ea9e5f92.css.map",
-    "main.dd7cdc25.js.map": "/YorakeysWebsite/static/js/main.dd7cdc25.js.map"
+    "main.bfc7448d.js.map": "/YorakeysWebsite/static/js/main.bfc7448d.js.map"
   },
   "entrypoints": [
     "static/css/main.ea9e5f92.css",
-    "static/js/main.dd7cdc25.js"
+    "static/js/main.bfc7448d.js"
   ]
 }

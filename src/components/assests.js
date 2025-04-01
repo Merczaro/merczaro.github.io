@@ -7,9 +7,30 @@ import centuryShip from '../images/century-ship.jpg';
 
 const Assests = () => {
   const assests = [
-    { title: 'Farming world', image: farmingWorld1, description: 'A thrilling adventure...', color: 'orange', status: 'published', router: 'farming-world' },
-    { title: '17th Century Ship', image: centuryShip, description: 'An exciting journey...', color: 'blue', status: 'published', router: '17th-century-ship' },
-    { title: 'Si-fi Farming world', image: farmingWorld3, description: 'An exciting journey...', color: 'black', status: 'development', router: '' }
+    { 
+      title: 'Farming Land', 
+      image: farmingWorld1, 
+      description: 'A high-quality 3D farming environment with rich details. Perfect for open-world and simulation games.', 
+      color: 'orange', 
+      status: 'published', 
+      router: 'farming-land' 
+    },
+    { 
+      title: '17th Century Ship', 
+      image: centuryShip, 
+      description: 'A meticulously crafted 17th-century ship model. Ideal for historical, naval, and adventure games.', 
+      color: 'blue', 
+      status: 'published', 
+      router: '17th-century-ship' 
+    },
+    { 
+      title: 'Sci-fi Farming Land', 
+      image: farmingWorld3, 
+      description: 'A futuristic farming world with immersive sci-fi elements. Designed for next-gen game environments', 
+      color: 'black', 
+      status: 'development', 
+      router: '' 
+    }
   ];
 
   return (
@@ -24,7 +45,7 @@ const Assests = () => {
             </div>
             <p className="mt-2 mb-4 text-sm sm:text-base">{assest.description}</p>
             {assest.status === 'published' ? (
-              <a href={`/store/${assest.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">Learn More</a>
+              <a href={`/store/${assest.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">Know More</a>
             ) : (
               <p className="flex items-center gap-2 text-sm sm:text-base">
                 <FontAwesomeIcon icon={faSpinner} spin /> Under Development..

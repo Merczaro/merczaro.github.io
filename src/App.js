@@ -9,6 +9,8 @@ import ContactList from './components/contact-list';
 import Navbar from './components/nav-bar';
 import Footer from './components/footer';
 import MacTheMachine from './components/mac-the-machine';
+import FarmingLand from './components/farming-land';
+import CenturyShip from './components/17th-century-ship';
 import './App.css';
 import './index.css';
 
@@ -23,8 +25,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/games" element={<Games />} />
             <Route path="/games/mac-the-machine" element={<MacTheMachine />} />
-            <Route path="/store/farming-world" element={<MacTheMachine />} />
-            <Route path="/store/17th-century-ship" element={<MacTheMachine />} />
+            <Route path="/store/farming-land" element={<FarmingLand />} />
+            <Route path="/store/17th-century-ship" element={<CenturyShip />} />
             <Route path="/store" element={<Store />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact-list" element={<ContactList />} />

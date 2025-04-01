@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Mac1 from '../images/MAC-1.jpeg';
-import Mac2 from '../images/MAC-2.jpeg';
-import Mac3 from '../images/MAC-3.jpeg';
-import Mac4 from '../images/MAC-4.jpeg';
 import { ReactComponent as ArrowOpen } from '../images/arrow-open.svg';
-
-const images = [
-  { src: Mac1, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
-  { src: Mac2, content: 'Mac the Machine', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' },
-  { src: Mac3, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
-  { src: Mac4, content: 'Mac the Machine', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' }
-];
 
 const CarouselButton = ({ url, text }) => (
   <a href={url} className="bg-black text-white py-2 px-4 w-48 text-center rounded-3xl shadow-md border border-transparent hover:border-white hover:bg-opacity-70 transition-colors duration-300 text-xs sm:text-sm md:text-base lg:text-lg" target="_blank" rel="noopener noreferrer">
@@ -28,15 +17,15 @@ const NavigationButton = ({ direction, onClick }) => (
   </button>
 );
 
-const Carousel = () => {
+const Carousel = ({slides}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
   };
 
   useEffect(() => {
@@ -51,13 +40,13 @@ const Carousel = () => {
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {images.map((image, index) => (
+        {slides.map((image, index) => (
           <div key={index} className="relative flex-shrink-0 w-full h-full">
             <img src={image.src} alt={`Slide ${index}`} className="w-full h-96 object-cover rounded-lg" />
             {/* Overlapping Buttons */}
             <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-10 uppercase">
-              <CarouselButton url={image.url1} text={image.btn1} />
-              <CarouselButton url={image.url2} text={image.btn2} />
+             { image?.btn1 && (<CarouselButton url={image.url1} text={image.btn1} />) }
+             { image?.btn2 && ( <CarouselButton url={image.url2} text={image.btn2} />) }
             </div>
           </div>
         ))}
@@ -67,7 +56,7 @@ const Carousel = () => {
       <NavigationButton direction="Next" onClick={goToNext} />
       {/* Dots Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {images.map((_, index) => (
+        {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}

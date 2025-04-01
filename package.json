@@ -2,7 +2,7 @@
   "name": "yorakeys_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://merczaro.github.io/YorakeysWebsite",
+  "homepage": "https://merczaro.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",

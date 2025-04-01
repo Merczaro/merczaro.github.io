@@ -2,11 +2,23 @@ import React from 'react';
 import Carousel from './carousel.js';
 import gamebg from '../images/game-bg.jpg';
 import gamebanner from '../images/gamebg.jpg';
+import Mac1 from '../images/MAC-1.jpeg';
+import Mac2 from '../images/MAC-2.jpeg';
+import Mac3 from '../images/MAC-3.jpeg';
+import Mac4 from '../images/MAC-4.jpeg';
+
+const slides = [
+  { src: Mac1, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
+  { src: Mac2, content: 'Mac the Machine', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' },
+  { src: Mac3, content: 'Mac the Machine', url1: 'https://example.com/mac-the-machine', url2: 'https://example.com/mac-the-machine', btn1: 'Watch Trailer', btn2: 'Buy Now' },
+  { src: Mac4, content: 'Mac the Machine', url1: 'https://example.com/carrot-buds', url2: 'https://example.com/carrot-buds', btn1: 'Watch Trailer', btn2: 'Pre Order Now' }
+];
+
 const Home = () => {
   return (
     <div className="mt-8">
       <div className="w-full mb-8">
-        <Carousel />
+        <Carousel slides={slides} />
       </div>
       <div className="mt-8 max-w-8xl mx-auto flex justify-center items-center h-32 bg-cover bg-center" style={{ backgroundImage: `url(${gamebanner})` }}>
         <a href="/games" className="bg-gray-200 text-black font-bold uppercase py-4 px-8 rounded-full shadow-md border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors duration-300">

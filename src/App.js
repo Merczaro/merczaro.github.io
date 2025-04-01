@@ -1,8 +1,9 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
-import Games from './components/projects';
+import Games from './components/games';
+import Store from './components/assests';
 import Contact from './components/contact';
 import ContactList from './components/contact-list';
 import Navbar from './components/nav-bar';
@@ -18,11 +19,13 @@ const App = () => {
         <Navbar />
         <div className="flex-grow mx-auto p-4 mt-16 mb-16 overflow-auto">
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/games" element={<Games />} />
             <Route path="/games/mac-the-machine" element={<MacTheMachine />} />
+            <Route path="/store/farming-world" element={<MacTheMachine />} />
+            <Route path="/store/17th-century-ship" element={<MacTheMachine />} />
+            <Route path="/store" element={<Store />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact-list" element={<ContactList />} />
           </Routes>

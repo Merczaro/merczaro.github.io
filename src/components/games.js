@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Mac1 from '../images/MAC-1.jpeg';
 import CarrotBuds from '../images/carrotbuds.jpg';
+import { Link } from 'react-router-dom';
 
 const Games = () => {
   const games = [
@@ -22,7 +23,9 @@ const Games = () => {
             </div>
             <p className="mt-2 mb-4 text-sm sm:text-base">{game.description}</p>
             {game.status === 'published' ? (
-              <a href={`/games/${game.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">Learn More</a>
+              <Link to={`/games/${game.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">
+                Learn More
+              </Link>
             ) : (
               <p className="flex items-center gap-2 text-sm sm:text-base">
                 <FontAwesomeIcon icon={faSpinner} spin /> Under Development..

@@ -16,15 +16,16 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { path: '/home', label: 'Home' },
+    { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/games', label: 'Games' },
+    { path: '/store', label: 'Store' },
     { path: '/contact', label: 'Contact' }
   ];
 
   return (
     <nav className="bg-gray-800 p-4 fixed top-0 w-full z-10 flex justify-between items-center shadow-lg">
-      <Link to="/home" className="flex items-center w-full md:w-auto">
+      <Link to="/" className="flex items-center w-full md:w-auto">
         <img src={logo} alt="Yorakeys Logo" className="w-10 h-10 mr-2" />
         <h1 className="text-2xl font-bold">Yorakeys</h1>
       </Link>

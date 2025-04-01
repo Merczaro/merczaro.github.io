@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/YorakeysWebsite/static/css/main.ea9e5f92.css",
-    "main.js": "/YorakeysWebsite/static/js/main.bfc7448d.js",
+    "main.css": "/YorakeysWebsite/static/css/main.4512e6e3.css",
+    "main.js": "/YorakeysWebsite/static/js/main.5bb08ddb.js",
     "static/media/MAC-3.jpeg": "/YorakeysWebsite/static/media/MAC-3.86987aaf3bf9acf8dd77.jpeg",
+    "static/media/farming-world-1.jpg": "/YorakeysWebsite/static/media/farming-world-1.ee79bcc1a2461908f94a.jpg",
     "static/media/image.jpg": "/YorakeysWebsite/static/media/image.5812a557c401204c9ecd.jpg",
+    "static/media/century-ship.jpg": "/YorakeysWebsite/static/media/century-ship.0906c1d2bb16a573059a.jpg",
+    "static/media/farming-world-3.jpg": "/YorakeysWebsite/static/media/farming-world-3.18a940d2460ed3b62504.jpg",
     "static/media/MAC-4.jpeg": "/YorakeysWebsite/static/media/MAC-4.f30134d1ae9657cc9214.jpeg",
     "static/media/contact.jpg": "/YorakeysWebsite/static/media/contact.58603a504ac68e11b8e8.jpg",
     "static/media/gamebg.jpg": "/YorakeysWebsite/static/media/gamebg.3e7ae283db00c9701313.jpg",
@@ -17,11 +20,11 @@
     "static/media/success-tick.svg": "/YorakeysWebsite/static/media/success-tick.a35e7409c71f83995fbb2ab420dcfe21.svg",
     "static/media/arrow-open.svg": "/YorakeysWebsite/static/media/arrow-open.6f71e65b999406eefcb0445f65230256.svg",
     "static/media/nav-icon.svg": "/YorakeysWebsite/static/media/nav-icon.237eb9f890ef2fac3ce9fb69b11ad6e4.svg",
-    "main.ea9e5f92.css.map": "/YorakeysWebsite/static/css/main.ea9e5f92.css.map",
-    "main.bfc7448d.js.map": "/YorakeysWebsite/static/js/main.bfc7448d.js.map"
+    "main.4512e6e3.css.map": "/YorakeysWebsite/static/css/main.4512e6e3.css.map",
+    "main.5bb08ddb.js.map": "/YorakeysWebsite/static/js/main.5bb08ddb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9e5f92.css",
-    "static/js/main.bfc7448d.js"
+    "static/css/main.4512e6e3.css",
+    "static/js/main.5bb08ddb.js"
   ]
 }

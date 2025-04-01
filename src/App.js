@@ -16,7 +16,7 @@ import './index.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow mx-auto p-4 mt-16 mb-16 overflow-auto">

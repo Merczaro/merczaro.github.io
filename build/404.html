@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/fav-icon.svg" type="image/svg+xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Yorakeys</title>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  
+<!-- Initialize Firebase -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const firebaseConfig = {
+      apiKey: "AIzaSyCXzbTCpkrPpmU3xxfGe5GNiNMHuXSixZ4",
+      authDomain: "react-firebase-ac946.firebaseapp.com",
+      projectId: "react-firebase-ac946",
+      storageBucket: "react-firebase-ac946.appspot.com",
+      messagingSenderId: "527395835282",
+      appId: "1:527395835282:web:5295b38061f5af5bba454b",
+      measurementId: "G-HMVRC58RBV"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const firestore = firebase.firestore();
+    const auth = firebase.auth();
+
+    // Expose Firestore and Auth to window object for global access
+    window.firestore = firestore;
+    window.auth = auth;
+  });
+</script>
+<!-- Include EmailJS SDK -->
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("FrVkZE6j-jCb1-IP7"); // Replace with your EmailJS Public Key
+  })();
+</script>
+
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

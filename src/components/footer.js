@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faReddit, faYoutube, faSteam } from '@fortawesome/free-brands-svg-icons';
 
 const QuickLink = ({ href, text }) => (
   <li>
-    <a href={href} className="text-white transition-transform duration-300 ease-in-out hover:scale-160 z-10">
+    <Link to={href} className="text-white transition-transform duration-300 ease-in-out hover:scale-160 z-10">
       {text}
-    </a>
+    </Link>
   </li>
 );
 

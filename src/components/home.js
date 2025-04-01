@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from './carousel.js';
+import { Link } from "react-router-dom";
 import gamebg from '../images/game-bg.jpg';
 import gamebanner from '../images/gamebg.jpg';
 import Mac1 from '../images/MAC-1.jpeg';
@@ -21,9 +22,9 @@ const Home = () => {
         <Carousel slides={slides} />
       </div>
       <div className="mt-8 max-w-8xl mx-auto flex justify-center items-center h-32 bg-cover bg-center" style={{ backgroundImage: `url(${gamebanner})` }}>
-        <a href="/games" className="bg-gray-200 text-black font-bold uppercase py-4 px-8 rounded-full shadow-md border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors duration-300">
+        <Link to="/games" className="bg-gray-200 text-black font-bold uppercase py-4 px-8 rounded-full shadow-md border border-transparent hover:bg-black hover:text-white hover:border-white transition-colors duration-300">
           Explore Our Games
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col md:flex-row pt-2 p-8 bg-black text-white max-w-8xl">
         <div className="flex-1 text-left p-4 flex flex-col justify-center items-center md:items-start">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import farmingWorld1 from '../images/farming-world-1.jpg';
@@ -45,7 +46,9 @@ const Assests = () => {
             </div>
             <p className="mt-2 mb-4 text-sm sm:text-base">{assest.description}</p>
             {assest.status === 'published' ? (
-              <a href={`/store/${assest.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">Know More</a>
+              <Link to={`/store/${assest.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">
+                Know More
+              </Link>
             ) : (
               <p className="flex items-center gap-2 text-sm sm:text-base">
                 <FontAwesomeIcon icon={faSpinner} spin /> Under Development..

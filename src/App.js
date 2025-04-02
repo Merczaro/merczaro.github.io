@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
 import Games from './components/games';
-import Store from './components/assests';
+import Store from './components/assets';
 import Contact from './components/contact';
 import ContactList from './components/contact-list';
 import Navbar from './components/nav-bar';
@@ -16,7 +16,7 @@ import './index.css';
 
 const App = () => {
   return (
-    <Router basename="/">
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow mx-auto p-4 mt-16 mb-16 overflow-auto">

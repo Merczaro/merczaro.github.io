@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0f977dd.css",
-    "main.js": "/static/js/main.cbeafe1d.js",
+    "main.css": "/static/css/main.50d21ee8.css",
+    "main.js": "/static/js/main.57685aa1.js",
     "static/media/MAC-3.jpeg": "/static/media/MAC-3.86987aaf3bf9acf8dd77.jpeg",
     "static/media/farming-world-1.jpg": "/static/media/farming-world-1.ee79bcc1a2461908f94a.jpg",
     "static/media/image.jpg": "/static/media/image.5812a557c401204c9ecd.jpg",
@@ -19,11 +19,11 @@
     "static/media/success-tick.svg": "/static/media/success-tick.a35e7409c71f83995fbb2ab420dcfe21.svg",
     "static/media/arrow-open.svg": "/static/media/arrow-open.6f71e65b999406eefcb0445f65230256.svg",
     "static/media/nav-icon.svg": "/static/media/nav-icon.237eb9f890ef2fac3ce9fb69b11ad6e4.svg",
-    "main.a0f977dd.css.map": "/static/css/main.a0f977dd.css.map",
-    "main.cbeafe1d.js.map": "/static/js/main.cbeafe1d.js.map"
+    "main.50d21ee8.css.map": "/static/css/main.50d21ee8.css.map",
+    "main.57685aa1.js.map": "/static/js/main.57685aa1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0f977dd.css",
-    "static/js/main.cbeafe1d.js"
+    "static/css/main.50d21ee8.css",
+    "static/js/main.57685aa1.js"
   ]
 }

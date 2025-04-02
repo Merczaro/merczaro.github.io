@@ -21,22 +21,23 @@ const Games = () => {
       <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-8 text-center">Our Games</h1>
       <div className={`grid ${games.length === 1 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'} gap-4 sm:gap-8 justify-center`}>
         {games.map((game, index) => (
-          <div key={index} className={`p-4 rounded-lg ${games.length === 1 ? 'mx-auto w-3/4' : ''}`}>
+          <div key={index} className={`p-4 rounded-lg w-full sm:w-3/4 mx-auto`}>
             <h3 className="text-xl sm:text-2xl mt-4">{game.title}</h3>
             <div className="mt-2">
-              <img src={game.image} alt={game.title} className="w-full h-40 sm:h-64 object-cover rounded-lg" />
+              <img src={game.image} alt={game.title} className="w-full h-48 sm:h-64 object-cover rounded-lg" />
             </div>
             <p className="mt-2 mb-4 text-sm sm:text-base">{game.description}</p>
             {
               game.status === 'published' ? (
-              <Link to={`/games/${game.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">
-                Learn More
-              </Link>
-            ) : (
-              <p className="flex items-center gap-2 text-sm sm:text-base">
-                <FontAwesomeIcon icon={faSpinner} spin /> Under Development..
-              </p>
-            )}
+                <Link to={`/games/${game.router}`} className="text-blue-500 hover:underline text-sm sm:text-base">
+                  Learn More
+                </Link>
+              ) : (
+                <p className="flex items-center gap-2 text-sm sm:text-base">
+                  <FontAwesomeIcon icon={faSpinner} spin /> Under Development..
+                </p>
+              )
+            }
           </div>
         ))}
       </div>

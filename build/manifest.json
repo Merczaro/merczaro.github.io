@@ -3,17 +3,17 @@
   "name": "YoraKeys Website",
   "icons": [
     {
-      "src": "%PUBLIC_URL%/favicon.ico",
+      "src": "/merczaro.github.io/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "%PUBLIC_URL%/logo192.png",
+      "src": "/merczaro.github.io/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "%PUBLIC_URL%/logo512.png",
+      "src": "/merczaro.github.io/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
